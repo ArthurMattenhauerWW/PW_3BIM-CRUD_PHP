@@ -48,7 +48,7 @@
 	<dd><?php echo telefone($customer['phone']); ?></dd>
 
 	<dt>Celular:</dt>
-	<dd><?php echo telefone($customer['mobile']); ?></dd>
+	<dd><?php echo celular($customer['mobile']); ?></dd>
 
 	<dt>UF:</dt>
 	<dd><?php echo $customer['state']; ?></dd>

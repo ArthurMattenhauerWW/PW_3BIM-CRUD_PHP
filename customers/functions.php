@@ -22,6 +22,10 @@ function telefone($tel) {
 	return "(" . substr($tel, 0, 2) . ")" . substr($tel, 2, 5) . "-" . substr($tel, 7, 4);
 }
 
+function celular($tel) {
+	return "(" . substr($tel, 0, 2) . ")" . " " . substr($tel, 2, 5) . "-" . substr($tel, 7, 4);
+}
+
 /**
  *  Formatar CEP
  */
