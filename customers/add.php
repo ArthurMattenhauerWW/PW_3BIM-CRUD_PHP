@@ -16,12 +16,12 @@
 
     <div class="form-group col-md-3">
       <label for="cpf_cnpj">CNPJ / CPF</label>
-      <input type="text" class="form-control" id="cpf_cnpj" name="customer['cpf_cnpj']">
+      <input type="text" class="form-control" id="cpf_cnpj" name="customer['cpf_cnpj'] " maxlength="11">
     </div>
 
     <div class="form-group col-md-2">
       <label for="birthdate">Data de Nascimento</label>
-      <input type="text" class="form-control" id="birthdate" name="customer['birthdate']">
+      <input type="date" class="form-control" id="birthdate" name="customer['birthdate'] ">
     </div>
   </div>
   
@@ -38,12 +38,12 @@
     
     <div class="form-group col-md-2">
       <label for="zip_code">CEP</label>
-      <input type="text" class="form-control" id="zip_code" name="customer['zip_code']">
+      <input type="text" class="form-control" id="zip_code" name="customer['zip_code'] " maxlength="8">
     </div>
     
     <div class="form-group col-md-2">
       <label for="created">Data de Cadastro</label>
-      <input type="text" class="form-control" id="created"  name="customer['created']" disabled>
+      <input type="date" class="form-control" id="created"  name="customer['created']" disabled>
     </div>
   </div>
   
@@ -55,17 +55,17 @@
     
     <div class="form-group col-md-2">
       <label for="phone">Telefone</label>
-      <input type="text" class="form-control" id="phone" name="customer['phone']">
+      <input type="text" class="form-control" id="phone" name="customer['phone'] " maxlength="11">
     </div>
     
     <div class="form-group col-md-2">
       <label for="mobile">Celular</label>
-      <input type="text" class="form-control" id="mobile" name="customer['mobile']">
+      <input type="text" class="form-control" id="mobile" name="customer['mobile'] " maxlength="11">
     </div>
     
     <div class="form-group col-md-1">
       <label for="state">UF</label>
-      <input type="text" class="form-control" id="state" name="customer['state']">
+      <input type="text" class="form-control" id="state" name="customer['state'] " maxlength="2" >
     </div>
     
     <div class="form-group col-md-2">
@@ -78,8 +78,8 @@
   
   <div id="actions" class="row">
     <div class="col-md-12">
-      <button type="submit" class="btn btn-primary mt-3">Salvar</button>
-      <a href="index.php" class="btn btn-default mt-3">Cancelar</a>
+      <button type="submit" class="btn btn-secondary mt-3"><i class="fa-solid fa-floppy-disk"></i>Salvar</button>
+      <a href="index.php" class="btn btn-light mt-3"><i class="fa-solid fa-circle-left"></i>Cancelar</a>
     </div>
   </div>
 </form>
