@@ -33,7 +33,7 @@
 
     <nav class="navbar navbar-expand-lg  bg-body-tertiary fixed-top" data-bs-theme="dark">
   <div class="container-fluid">
-    <i class="fa-solid fa-house-chimney" style="color: white;"></i>
+    <i class="fa-solid fa-house-chimney ms-5" style="color: white;"></i>
     <a class="navbar-brand" href="../index.php">Navbar</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarcrud" aria-controls="navbarcrud" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>

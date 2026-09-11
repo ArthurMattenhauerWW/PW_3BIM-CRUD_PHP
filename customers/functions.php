@@ -167,4 +167,12 @@ function update($table = null, $id = 0, $data = null) {
   close_database($database);
 }
 
+function delete($id = null) {
+
+  global $customer;
+  $customer = remove('customers', $id);
+
+  header('location: index.php');
+}
+
 ?>

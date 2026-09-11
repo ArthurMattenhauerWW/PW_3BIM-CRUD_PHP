@@ -57,7 +57,7 @@ include HEADER_TEMPLATE; ?>
                                 class="fa-solid fa-eye"></i> Visualizar</a>
                         <a href="edit.php?id=<?php echo $customer['id']; ?>" class="btn btn-sm btn-secondary"><i
                                 class="fa-solid fa-pencil"></i> Editar</a>
-                        <a href="#" class="btn btn-sm btn-light" data-toggle="modal" data-target="#delete-modal"
+                        <a href="#" class="btn btn-sm btn-light" data-bs-toggle="modal" data-bs-target="#delete-modal"
                             data-customer="<?php echo $customer['id']; ?>">
                             <i class="fa-solid fa-trash"></i> Excluir
                         </a>
@@ -72,4 +72,7 @@ include HEADER_TEMPLATE; ?>
     </tbody>
 </table>
 
-<?php include FOOTER_TEMPLATE; ?>
+<?php 
+include "modal.php";
+include FOOTER_TEMPLATE; 
+ ?>
