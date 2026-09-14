@@ -8,6 +8,6 @@ $('#delete-modal').on('show.bs.modal', function (event) {
   
   var modal = $(this);
   modal.find('.modal-title').text('Excluir Cliente #' + id);
-  modal.find('.modal-bpdy').text('Deseja Mesmo Excluir o Cliente? #' + id);
+  modal.find('.modal-bpdy').text('Deseja Mesmo Excluir o Cliente ' + id);
   modal.find('#confirm').attr('href', 'delete.php?id=' + id);
 })

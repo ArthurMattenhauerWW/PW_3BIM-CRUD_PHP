@@ -175,4 +175,28 @@ function delete($id = null) {
   header('location: index.php');
 }
 
+function remove( $table = null, $id = null ) {
+
+  $database = open_database();
+	
+  try {
+    if ($id) {
+
+      $sql = "DELETE FROM $table WHERE id = $id";
+      $result = $database->query($sql);
+
+      if ($result = $database->query($sql)) {   	
+        $_SESSION['message'] = "Registro Removido com Sucesso.";
+        $_SESSION['type'] = 'success';
+      }
+    }
+  } catch (Exception $e) { 
+
+   $_SESSION['message'] = "Não foi possível realizar a operação.<br>{$e->getMEssage()}";
+  $_SESSION['type'] = "danger";
+  }
+
+  close_database($database);
+}
+
 ?>
